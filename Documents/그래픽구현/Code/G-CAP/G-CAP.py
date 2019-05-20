@@ -8,7 +8,7 @@ import sys
 count = 0
 
 def screenshot():
-        image = ImageGrab.grab(bbox=(60, 40, 800, 630))
+        image = ImageGrab.grab(bbox=(86 ,177, 1280, 720))
         printScreen = numpy.array(image)
         return  printScreen
 
