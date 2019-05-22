@@ -78,6 +78,8 @@ class ParkingEnv(gym.Env):
 		elif self.distance < after_action_distance:
 			act_reward = INCREASE_REWARD
 		
+		self.distance = after_action_distance
+		
 		if status >= 0:
 			self.done = True
 			reward = status + act_reward
